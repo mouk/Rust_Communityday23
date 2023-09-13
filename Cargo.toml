@@ -1,0 +1,22 @@
+[package]
+name = "custom_rt_rust"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+lambda_runtime = "0.7.3"
+# lambda_runtime_errors = "*"
+# lambda_http = "*"
+# tokio = "*"
+# aws-sdk-lambda = "0.26.0"
+chrono="*"
+serde_json = "1.0.94"
+[dependencies.serde]
+version = "1"
+features = ["derive"]
+
+[dependencies.tokio]
+version = "1.20.1"
+features = ["full"]
